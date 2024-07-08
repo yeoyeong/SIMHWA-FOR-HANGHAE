@@ -12,7 +12,7 @@ const todosSlice = createSlice({
   deleteLoading: "",
   reducers: {
     addTodo: (state, action) => {
-      state.list.push(action.payload);
+      state.list.unshift(action.payload);
     },
     deleteTodo: (state, action) => {
       state.list = state.list.filter((todo) => todo.id !== action.payload);
@@ -25,7 +25,7 @@ const todosSlice = createSlice({
       })
       .addCase(__addToDo.fulfilled, (state, action) => {
         state.addTodoLoading = false;
-        state.list.push(action.payload);
+        state.list.unshift(action.payload);
       })
       // __deleteTodo가 pending 상태일 때 해당 할 일의 deleteLoading 상태를 true로 설정합니다.
       .addCase(__deleteTodo.pending, (state, action) => {
