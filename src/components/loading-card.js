@@ -1,5 +1,5 @@
 import React from "react";
-import { TodoCard } from "./styles";
+import { TodoCard } from "./css/styles";
 
 const LoadingCard = ({ value }) => {
   return <TodoCard>{value}</TodoCard>;

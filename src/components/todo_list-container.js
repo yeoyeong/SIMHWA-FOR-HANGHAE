@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Button, TodoCard, TodoListContainer } from "./styles";
+import { Button, TodoCard, TodoListContainer } from "./css/styles";
 import useTodo from "../hooks/useTodo";
 import LoadingCard from "./loading-card";
 

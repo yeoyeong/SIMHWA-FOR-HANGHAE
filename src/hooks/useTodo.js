@@ -7,18 +7,21 @@ function useTodo() {
   const dispatch = useDispatch();
   const id = nextId();
 
-  // 시험 문제 1
+  /**
+   * 시험 문제 1.
+   * 추가하기 기능
+   */
   const onAddTodo = ({ title, body }, resetInputs) => {
     dispatch(__addToDo({ id: id, title, body }));
     resetInputs();
   };
 
+  /**
+   * 시험 문제 2.
+   * 삭제하기 기능
+   */
   const onDeleteTodo = (id) => {
     dispatch(__deleteTodo(id));
-    /**
-     * 시험 문제 2.
-     * 이곳에서 삭제하기 기능을 구현해주세요.
-     */
   };
 
   return {

@@ -1,6 +1,3 @@
-/**
- * 2초 지연을 시키는 함수입니다 (비동기 작업).
- */
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { waitTwoSeconds } from "../../utils";
 

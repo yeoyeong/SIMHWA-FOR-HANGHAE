@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, InputContainer } from "./styles";
+import { Button, InputContainer } from "./css/styles";
 import useInput from "../hooks/useInput";
 import useTodo from "../hooks/useTodo";
 import InputBox from "./input-box";
